@@ -1,3 +1,6 @@
+import { string } from "astro:schema";
+
+//format the date to a string
 function formatDate(date: Date): string {
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
@@ -8,4 +11,12 @@ function formatDate(date: Date): string {
   return new Date(date).toLocaleDateString(undefined, options);
 }
 
-export { formatDate };
+//capitalize the first letter
+function capitalize(str: string): string {
+  if (typeof str != "string" || str.length == 0) {
+    return str;
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+export { formatDate, capitalize };
