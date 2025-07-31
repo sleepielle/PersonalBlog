@@ -1,25 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import SearchForm from "../components/SearchForm.astro";
+import ArticleCard from "../components/ArticleCard.astro";
 import MostRecentArticle from "../components/MostRecentArticle.astro";
-import { HOMEPAGE_ARTICLE_LIMIT } from "../consts";
+import { HOMEPAGE_ARTICLE_LIMIT } from "../constants";
 
 import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
-import BlogCard from "../components/BlogCard.astro";
+import type { CollectionEntry, CollectionKey } from "astro:content";
 
-const allBlogArticles: CollectionEntry<"blog">[] = (
-  await getCollection("blog")
-).sort(
-  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
+  .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const mostRecentArticle: CollectionEntry<"blog"> = allBlogArticles[0];
+const mostRecentArticle: CollectionEntry<'blog'> = allBlogArticles[0];
 
-const otherArticles: CollectionEntry<"blog">[] = allBlogArticles.slice(1);
+const otherArticles: CollectionEntry<'blog'>[] = allBlogArticles.slice(1);
 ---
-
 <MainLayout>
   <!-- Top Grid -->
   <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
@@ -35,10 +30,8 @@ const otherArticles: CollectionEntry<"blog">[] = allBlogArticles.slice(1);
 
   <!-- Main Grid -->
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    {
-      otherArticles
-        .slice(0, HOMEPAGE_ARTICLE_LIMIT)
-        .map((article) => <BlogCard article={article} />)
-    }
+   {otherArticles.slice(0, HOMEPAGE_ARTICLE_LIMIT).map(article => (
+    <ArticleCard article={article} />
+   ))}
   </div>
 </MainLayout>

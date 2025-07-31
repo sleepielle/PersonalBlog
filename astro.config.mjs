@@ -1,23 +1,11 @@
-// @ts-check
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel";
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
 
-import tailwindcss from "@tailwindcss/vite";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mercedespaz-blog.vercel.app",
-  integrations: [mdx(), sitemap()],
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  output: "server",
+  integrations: [tailwind()],
+  output: 'server',
+  adapter: vercel()
 });
