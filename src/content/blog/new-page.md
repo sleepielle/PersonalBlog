@@ -4,7 +4,7 @@ pubDate: 2024-01-18
 author: 'Michael Johnson'
 image: 'image3.png'
 tags: ['vr', 'gadgets', 'tech']
-slug: immerse-in-the-virtual-world-vr-development
+slug: new-page
 ---
 
 Virtual Reality (VR) is no longer science fiction; it's a thriving technology that's transforming the way we interact with digital content. In 2024, VR development is at the forefront of innovation, offering endless possibilities for entertainment, education, and more. Let's dive into the exciting world of VR development and explore why it's worth immersing yourself in.
