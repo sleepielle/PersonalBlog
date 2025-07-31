@@ -1,0 +1,51 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import Tags from "../../components/Tags.astro";
+import { formatDate } from "../../utils";
+import SearchForm from "../../components/SearchForm.astro";
+const { slug } = Astro.params;
+
+// Get all blog entries
+const allBlogEntries = await getCollection("blog");
+
+// Find the specific entry by slug
+const entry = allBlogEntries.find((entry) => entry.slug === slug);
+
+if (!entry) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await entry.render();
+---
+
+<MainLayout>
+  <a
+    href="/articles"
+    class="inline-block bg-gray-100 p-2 mb-6 hover:bg-indigo-500 hover:text-white"
+    >Back To All Articles</a
+  >
+  <article>
+    <h1>{entry.data.title}</h1>
+    <h3>Written by {entry.data.author} on {formatDate(entry.data.pubDate)}</h3>
+    <Tags tags={entry.data.tags} />
+    <img
+      src={"/images/" + entry.data.image}
+      alt="Article image"
+      class="my-6 w-full h-auto rounded-xl mb-6"
+    />
+    <Content />
+  </article>
+</MainLayout>
+
+<style is:global>
+  p {
+    margin: 20px 0;
+  }
+
+  h2 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+  }
+</style>
