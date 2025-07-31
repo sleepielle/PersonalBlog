@@ -1,7 +1,7 @@
 import { c as createComponent, b as createAstro, m as maybeRenderHead, d as addAttribute, r as renderComponent, a as renderTemplate } from './astro/server_6MF-LJoH.mjs';
 import 'kleur/colors';
-import { f as formatDate } from './MainLayout_Do5DmG02.mjs';
-import { $ as $$Tags } from './Tags_DXY8b_AL.mjs';
+import { f as formatDate } from './MainLayout_BqIcu-X8.mjs';
+import { $ as $$Tags } from './Tags_BoSULEzg.mjs';
 
 const $$Astro = createAstro();
 const $$ArticleCard = createComponent(($$result, $$props, $$slots) => {
