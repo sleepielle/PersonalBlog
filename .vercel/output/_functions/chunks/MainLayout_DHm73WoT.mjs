@@ -1,9 +1,9 @@
 import { c as createComponent, m as maybeRenderHead, d as renderComponent, r as renderTemplate, b as addAttribute, a as createAstro, j as renderSlot, k as renderHead } from './astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
 import './index_DfOMS8cV.mjs';
-import { $ as $$Image } from './_astro_assets_Do1op8xS.mjs';
+import { $ as $$Image } from './_astro_assets_D01urjh8.mjs';
 import 'clsx';
-import { g as getCollection } from './_astro_content_DVP7NWPI.mjs';
+import { g as getCollection } from './_astro_content_DH3IbMC_.mjs';
 /* empty css                         */
 import { a as SITE_TITLE, S as SITE_DESCRIPTION } from './consts_DtGlpqAF.mjs';
 
@@ -56,7 +56,7 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://your-domain.vercel.app");
 const $$MainLayout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$MainLayout;

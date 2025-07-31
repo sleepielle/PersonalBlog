@@ -1,14 +1,14 @@
 import { a as createAstro, c as createComponent, m as maybeRenderHead, b as addAttribute, r as renderTemplate, d as renderComponent } from '../chunks/astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
-import { f as formatDate, $ as $$MainLayout } from '../chunks/MainLayout_BvZsSa4J.mjs';
+import { f as formatDate, $ as $$MainLayout } from '../chunks/MainLayout_DHm73WoT.mjs';
 import { $ as $$SearchForm } from '../chunks/SearchForm_THM1a0kV.mjs';
 import 'clsx';
 import { H as HOMEPAGE_ARTICLE_LIMIT } from '../chunks/consts_DtGlpqAF.mjs';
-import { g as getCollection } from '../chunks/_astro_content_DVP7NWPI.mjs';
-import { $ as $$BlogCard } from '../chunks/BlogCard_yhoVldiM.mjs';
+import { g as getCollection } from '../chunks/_astro_content_DH3IbMC_.mjs';
+import { $ as $$BlogCard } from '../chunks/BlogCard_DwF1mmZF.mjs';
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://your-domain.vercel.app");
 const $$MostRecentArticle = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$MostRecentArticle;

@@ -1,12 +1,12 @@
 import { a as createAstro, c as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute } from '../../chunks/astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout, f as formatDate } from '../../chunks/MainLayout_BvZsSa4J.mjs';
-import { g as getCollection } from '../../chunks/_astro_content_DVP7NWPI.mjs';
-import { $ as $$Tags } from '../../chunks/Tags_BceEeX_n.mjs';
+import { $ as $$MainLayout, f as formatDate } from '../../chunks/MainLayout_DHm73WoT.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_DH3IbMC_.mjs';
+import { $ as $$Tags } from '../../chunks/Tags_Ck6eaEWI.mjs';
 /* empty css                                     */
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://your-domain.vercel.app");
 const $$ = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$;

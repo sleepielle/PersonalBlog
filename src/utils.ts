@@ -1,4 +1,4 @@
-import { string } from "astro:schema";
+// No imports needed for this file
 
 //format the date to a string
 function formatDate(date: Date): string {

@@ -1,8 +1,8 @@
 import { c as createComponent, d as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout } from '../chunks/MainLayout_BvZsSa4J.mjs';
+import { $ as $$MainLayout } from '../chunks/MainLayout_DHm73WoT.mjs';
 import '../chunks/index_DfOMS8cV.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_Do1op8xS.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_D01urjh8.mjs';
 export { renderers } from '../renderers.mjs';
 
 const error = new Proxy({"src":"/_astro/error-404.Ox42KQdE.png","width":512,"height":512,"format":"png"}, {

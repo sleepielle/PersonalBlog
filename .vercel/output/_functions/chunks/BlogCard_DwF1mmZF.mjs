@@ -1,9 +1,9 @@
 import { a as createAstro, c as createComponent, m as maybeRenderHead, b as addAttribute, d as renderComponent, r as renderTemplate } from './astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
-import { $ as $$Tags } from './Tags_BceEeX_n.mjs';
-import { f as formatDate } from './MainLayout_BvZsSa4J.mjs';
+import { $ as $$Tags } from './Tags_Ck6eaEWI.mjs';
+import { f as formatDate } from './MainLayout_DHm73WoT.mjs';
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://your-domain.vercel.app");
 const $$BlogCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$BlogCard;

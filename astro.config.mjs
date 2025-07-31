@@ -8,9 +8,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://mercedespaz-blog.vercel.app",
   integrations: [mdx(), sitemap()],
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 
   vite: {
     plugins: [tailwindcss()],

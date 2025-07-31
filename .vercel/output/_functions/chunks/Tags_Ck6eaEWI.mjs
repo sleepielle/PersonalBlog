@@ -1,9 +1,9 @@
 import { a as createAstro, c as createComponent, m as maybeRenderHead, b as addAttribute, r as renderTemplate } from './astro/server_CrJ7KYZF.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { c as capitalize } from './MainLayout_BvZsSa4J.mjs';
+import { c as capitalize } from './MainLayout_DHm73WoT.mjs';
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://your-domain.vercel.app");
 const $$Tags = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Tags;
