@@ -1,8 +1,8 @@
 /* empty css                                    */
 import { c as createComponent, b as createAstro, r as renderComponent, a as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_6MF-LJoH.mjs';
 import 'kleur/colors';
-import { a as getEntry, $ as $$MainLayout, f as formatDate } from '../../chunks/MainLayout_BqIcu-X8.mjs';
-import { $ as $$Tags } from '../../chunks/Tags_BoSULEzg.mjs';
+import { a as getEntry, $ as $$MainLayout, f as formatDate } from '../../chunks/MainLayout_1hPJObl_.mjs';
+import { $ as $$Tags } from '../../chunks/Tags_COJ4p_F0.mjs';
 /* empty css                                     */
 export { renderers } from '../../renderers.mjs';
 
@@ -20,9 +20,9 @@ const $$ = createComponent(async ($$result, $$props, $$slots) => {
   }
   const { Content } = await entry.render();
   return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<a href="/articles" class="inline-block bg-gray-100 p-2 mb-6 hover:bg-indigo-500 hover:text-white">Back To Articles</a> <article> <h1 class="text-4xl font-bold mb-2"> ${entry.data.title}</h1> <h3 class="text-lg mb-2">Written by ${entry.data.author} on ${formatDate(entry.data.pubDate)}</h3> ${renderComponent($$result2, "Tags", $$Tags, { "tags": entry.data.tags })} <img${addAttribute("/images/" + entry.data.image, "src")} alt="Article Image" class="w-full h-auto rounded-xl my-6"> ${renderComponent($$result2, "Content", Content, {})} </article> ` })} `;
-}, "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/articles/[...slug].astro", void 0);
+}, "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/articles/[...slug].astro", void 0);
 
-const $$file = "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/articles/[...slug].astro";
+const $$file = "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/articles/[...slug].astro";
 const $$url = "/articles/[...slug]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

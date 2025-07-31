@@ -1,9 +1,9 @@
 /* empty css                                 */
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_6MF-LJoH.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout } from '../chunks/MainLayout_BqIcu-X8.mjs';
+import { $ as $$MainLayout } from '../chunks/MainLayout_1hPJObl_.mjs';
 import '../chunks/index_BW6BPdis.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_BaD2xI55.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_CalCS1Yz.mjs';
 export { renderers } from '../renderers.mjs';
 
 const about = new Proxy({"src":"/_astro/about.C1FZ3Rbp.jpg","width":6000,"height":4000,"format":"jpg"}, {
@@ -12,7 +12,7 @@ const about = new Proxy({"src":"/_astro/about.C1FZ3Rbp.jpg","width":6000,"height
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/images/about.jpg";
+								return "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/images/about.jpg";
 							}
 							
 							return target[name];
@@ -25,7 +25,7 @@ const team1 = new Proxy({"src":"/_astro/team1.CHXq7Isr.png","width":750,"height"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/images/team1.png";
+								return "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/images/team1.png";
 							}
 							
 							return target[name];
@@ -38,7 +38,7 @@ const team2 = new Proxy({"src":"/_astro/team2.Ccx9qtIf.png","width":750,"height"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/images/team2.png";
+								return "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/images/team2.png";
 							}
 							
 							return target[name];
@@ -51,7 +51,7 @@ const team3 = new Proxy({"src":"/_astro/team3.B0njnFun.png","width":750,"height"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/images/team3.png";
+								return "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/images/team3.png";
 							}
 							
 							return target[name];
@@ -68,9 +68,9 @@ Our mission is to empower and educate our readers, helping them stay up-to-date 
 </p> </div> </div>  <div class="mt-10"> <h2 class="text-3xl font-extrabold text-gray-900 mb-8">
 Our Team
 </h2> <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"> <div class="bg-white shadow-lg rounded-lg overflow-hidden"> ${renderComponent($$result2, "Image", $$Image, { "src": team1, "alt": "Team Member 1", "class": "w-full h-auto" })} <div class="p-6"> <h3 class="text-xl font-semibold text-gray-900 mb-2">John Doe</h3> <p class="text-gray-70">Founder & Editor-in-Chief</p> </div> </div> <div class="bg-white shadow-lg rounded-lg overflow-hidden"> ${renderComponent($$result2, "Image", $$Image, { "src": team2, "alt": "Team Member 2", "class": "w-full h-auto" })} <div class="p-6"> <h3 class="text-xl font-semibold text-gray-900 mb-2">Paul Newman</h3> <p class="text-gray-70">Lead Writer</p> </div> </div> <div class="bg-white shadow-lg rounded-lg overflow-hidden"> ${renderComponent($$result2, "Image", $$Image, { "src": team3, "alt": "Team Member 3", "class": "w-full h-auto" })} <div class="p-6"> <h3 class="text-xl font-semibold text-gray-900 mb-2">Johanna Johnson</h3> <p class="text-gray-70">Tech Analyst</p> </div> </div> </div> </div> ` })}`;
-}, "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/about.astro", void 0);
+}, "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/about.astro", void 0);
 
-const $$file = "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/about.astro";
+const $$file = "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/about.astro";
 const $$url = "/about";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
