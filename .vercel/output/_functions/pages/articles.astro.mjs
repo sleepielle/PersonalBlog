@@ -1,9 +1,9 @@
 /* empty css                                 */
 import { c as createComponent, b as createAstro, m as maybeRenderHead, d as addAttribute, a as renderTemplate, r as renderComponent } from '../chunks/astro/server_6MF-LJoH.mjs';
 import 'kleur/colors';
-import { g as getCollection, A as ARTICLES_PER_PAGE, $ as $$MainLayout } from '../chunks/MainLayout_1hPJObl_.mjs';
-import { $ as $$ArticleCard } from '../chunks/ArticleCard_Ddbg9_Ri.mjs';
-import { $ as $$SearchForm } from '../chunks/SearchForm_Cq_DVzBi.mjs';
+import { g as getCollection, A as ARTICLES_PER_PAGE, $ as $$MainLayout } from '../chunks/MainLayout_MuztaTNj.mjs';
+import { $ as $$ArticleCard } from '../chunks/ArticleCard_Cbtb1yzc.mjs';
+import { $ as $$SearchForm } from '../chunks/SearchForm_DJNd3J3w.mjs';
 import 'clsx';
 export { renderers } from '../renderers.mjs';
 
@@ -17,7 +17,7 @@ Previous
 </a> <a${addAttribute("/articles?page=" + (currentPage + 1), "href")}${addAttribute(disableNext ? "inline-block bg-gray-100 px-3 py-2 text-gray-400 rounded-lg pointer-events-none" : "inline-block bg-indigo-100 px-3 py-2 hover:bg-indigo-600 hover:text-white rounded-lg", "class")}>
 Next
 </a> </div>`;
-}, "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/components/Pagination.astro", void 0);
+}, "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/components/Pagination.astro", void 0);
 
 const $$Astro = createAstro();
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
@@ -35,9 +35,9 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
     currentPage * ARTICLES_PER_PAGE
   );
   return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<h1 class="text-2xl pb-3">All Articles</h1> ${renderComponent($$result2, "SearchForm", $$SearchForm, {})} <br> <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"> ${articlesForPage.map((article) => renderTemplate`${renderComponent($$result2, "ArticleCard", $$ArticleCard, { "article": article })}`)} </div> ${renderComponent($$result2, "Pagination", $$Pagination, { "currentPage": currentPage, "disablePrevious": currentPage === 1, "disableNext": currentPage === totalPages })} ` })}`;
-}, "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/articles/index.astro", void 0);
+}, "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/articles/index.astro", void 0);
 
-const $$file = "C:/Users/pggis/Downloads/astro-blog-main(1)/astro-blog-main/src/pages/articles/index.astro";
+const $$file = "C:/Users/pggis/Documents/01_Personal/02_GithubProjects/Blog/src/pages/articles/index.astro";
 const $$url = "/articles";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
